@@ -100,6 +100,7 @@ h1, h2 {
   font-weight: normal;
 }
 ul {
+    width:100px;
   list-style-type: none;
   padding: 0;
 }

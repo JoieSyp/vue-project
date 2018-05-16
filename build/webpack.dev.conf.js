@@ -2,6 +2,7 @@
 const utils = require('./utils')
 const webpack = require('webpack')
 const config = require('../config')
+// webpack-merge是一个可以合并数组和对象的插件
 const merge = require('webpack-merge')
 const path = require('path')
 const baseWebpackConfig = require('./webpack.base.conf')
@@ -15,6 +16,7 @@ const PORT = process.env.PORT && Number(process.env.PORT)
 
 const devWebpackConfig = merge(baseWebpackConfig, {
   module: {
+    // 通过传入一些配置来获取rules配置，此处传入了sourceMap: false,表示不生成sourceMap
     rules: utils.styleLoaders({ sourceMap: config.dev.cssSourceMap, usePostCSS: true })
   },
   // cheap-module-eval-source-map is faster for development
