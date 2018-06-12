@@ -1,34 +1,29 @@
 import Vue from 'vue'
 // //引用路由插件
 import Router from 'vue-router'
-import App from '../App'
-// //引入组件  
-import Home from '@/components/home'
-import HelloWorld from '@/components/hello'
-import learn from '@/components/learn'
+import Home from '../page/home'
+import Detail from '../page/detail'
 import '../style/common.css'
 
 //使用路由插件
-Vue.use(Router)
+Vue.use(Router);
 
+console.log(Detail);
 
 export default new Router({
   mode: "history",
   routes: [
        {
-         path: '/',
-         name: 'Home',
+         path: '/home',
+         name: 'home',
          component: Home
-       },
-       {
-         path: '/hello',
-         name: 'HelloWorld',
-         component:HelloWorld   
-        },
-        {
-         path: '/learn/:userId',
-         name: 'learn',
-         component:learn   
-        }
+       }, {
+          path: '/',
+          component: Home
+      }, {
+          path:'/detail',
+          name:'detail',
+          component:Detail
+      }
   ]
 })

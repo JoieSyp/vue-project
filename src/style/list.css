@@ -1,0 +1,48 @@
+#main {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50; }
+  #main a {
+    display: inline-block; }
+  #main ul {
+    margin-top: 60px; }
+  #main ul, #main li {
+    clear: both;
+    overflow: hidden; }
+  #main .book-list {
+    width: 96%;
+    height: 272px; }
+  #main .book-list:first-child {
+    margin-top: 30px;
+    margin: 30px auto 0; }
+  #main .book-list:not(:first-child) {
+    margin: 20px auto 0; }
+  #main .book-img {
+    float: left;
+    width: 40%;
+    height: 262px; }
+    #main .book-img a {
+      width: 100%;
+      height: 100%; }
+    #main .book-img img {
+      width: 100%;
+      height: 100%; }
+  #main .book-info {
+    float: left;
+    width: 54%;
+    margin-left: 6%; }
+    #main .book-info a:nth-child(1) {
+      width: 100%;
+      font-size: 25.6px;
+      color: #3377aa;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden; }
+    #main .book-info p {
+      font-size: 20px;
+      color: #666; }
+  #main .book-info p:not(.author) {
+    padding-top: 10px; }
+
+/*# sourceMappingURL=list.css.map */
