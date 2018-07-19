@@ -8,7 +8,7 @@ import '../style/common.css'
 //使用路由插件
 Vue.use(Router);
 
-console.log(Detail);
+console.log(Router);
 
 export default new Router({
   mode: "history",

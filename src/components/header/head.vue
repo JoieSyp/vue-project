@@ -1,6 +1,6 @@
 <template>
    <header id="header-top">
-       <a class="title" @click="goFirst">读书书屋</a>
+       <a class="title" @click="goFirst">掌上阅读</a>
        <span>{{message}}</span>
         <slot name='logo'></slot>
         <slot name='info'></slot>
@@ -60,7 +60,7 @@
           height:30px;
          /*vertical-align: middle;*/
          margin-left: -10px;
-          input{
+         button{
               position: absolute;
              display:inline-block;
               color: transparent;

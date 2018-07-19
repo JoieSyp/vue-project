@@ -2,7 +2,7 @@
    <div id="detail">
        <header-detail signin-up='home'></header-detail>
        <div id='detail-book' class="detail-book">
-           图书详情页
+           图书详情页{{this.$route.query}} {{ this.$route.query.bookId }}
        </div>
    </div>
 </template>
